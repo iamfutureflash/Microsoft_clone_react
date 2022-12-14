@@ -2,7 +2,7 @@
   "homepage": "https://iamfutureflash.github.io/Microsoft_clone_react/",
   "name": "microsoft-clone-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "start": "vite --host",
@@ -22,5 +22,16 @@
     "@vitejs/plugin-react": "^3.0.0",
     "gh-pages": "^4.0.0",
     "vite": "^4.0.0"
+  },
+  "description": "microsoft clone built on reactjs",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamfutureflash/Microsoft_clone_react.git"
+  },
+  "author": "puneet vaishnav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamfutureflash/Microsoft_clone_react/issues"
   }
 }
