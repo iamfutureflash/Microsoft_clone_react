@@ -1,34 +1,34 @@
 import { useState } from 'react'
 import './App.css'
-
+import Navbar from './components/Navbar';
+import Slider from './components/Slider';
+import Promo from './components/Promo';
+import Cards from './components/Cards';
+import FollowLinks from './components/FollowLinks';
+import BackToTop from './components/BackToTop';
+import Footer from './components/Footer';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="./vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          {/* <img src={require('./react.svg').default} className="logo react" alt="React logo" /> */}
-          <img src="./react.svg" className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React + puneet</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <>
+      <div className="App">
+      <Navbar />
+      <Slider/>
+      <Promo/>
+      <Cards/>
+      <FollowLinks/>
+      <BackToTop/>
+      <Footer/>
+      {/* <div>
+      <details>
+          <summary>Click me to see the answer!</summary>
+          <p>my name is puneet</p>
+        </details>
+      </div> */}
     </div>
-  )
+    </>
+  );
 }
 
 export default App
